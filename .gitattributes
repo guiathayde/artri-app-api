@@ -1,0 +1,13 @@
+# Garante que scripts e arquivos consumidos por bash/Linux/Docker sejam SEMPRE
+# salvos com final de linha LF, independente da config de Git de cada pessoa.
+# Evita o erro "$'\r': command not found" ao rodar os scripts dentro do container
+# quando o checkout é feito no Windows (core.autocrlf=true).
+*.sh         text eol=lf
+*.bash       text eol=lf
+Dockerfile   text eol=lf
+*.Dockerfile text eol=lf
+*.env        text eol=lf
+*.env.example text eol=lf
+*.yml        text eol=lf
+*.yaml       text eol=lf
+*.conf       text eol=lf
